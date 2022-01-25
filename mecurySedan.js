@@ -1,3 +1,34 @@
+import Vehicle from "./vehicle.js";
+
+class Car extends Vehicle{
+    super(make, model, year, color, mileage){
+        this.maxPassengers = 5; 
+        this.passenger = 0; 
+        this.numberOfWheels = 4; 
+        this.maxSpeed = 160;
+        this.fuel = 10;
+        this.scheduleService = false;
+    }
+    loadPassenger(num){
+        if (passenger < maximumPassengers){
+            availableRoom == true
+            console.log('More seats available')
+        }
+    }
+    start(){
+        if (fuel > 0){
+            start == true
+            console.log('Vehicle has started')
+        }
+        
+    }
+    scheduleService(mileage){
+        if (mileage > 30000){
+        console.log("time for maintenance")        
+        }
+    }
+}
+
 //this includes the vehicle class as a module
 const VehicleModule = require("./vehicle")
 
