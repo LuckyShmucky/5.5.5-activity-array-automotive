@@ -2,11 +2,11 @@ import Vehicle from "./vehicle.js";
 
 class Car extends Vehicle{
     super(make, model, year, color, mileage){
-        this.maxPassengers = 5; 
+        this.maxPassengers = 6; 
         this.passenger = 0; 
         this.numberOfWheels = 4; 
-        this.maxSpeed = 160;
-        this.fuel = 10;
+        this.maxSpeed = 200;
+        this.fuel = 100;
         this.scheduleService = false;
     }
     loadPassenger(num){
